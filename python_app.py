@@ -26,7 +26,7 @@ em['To'] = email_receiver
 em['Subject'] = subject
 em.set_content(body)
 
-
+#compres zip
 with zipfile.ZipFile('E:/python-email/compres.zip','w') as f:
     for file in glob.glob('E:/mysimages/*'):
         f.write(file)
